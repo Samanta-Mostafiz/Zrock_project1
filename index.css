@@ -405,7 +405,7 @@ hr {
     width: 100%;
   }
   }
-  @media (max-width:91px) {
+  @media (min-width:91px) {
     html{
       font-size:50% ;
     }
