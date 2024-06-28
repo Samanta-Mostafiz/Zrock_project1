@@ -398,14 +398,30 @@ hr {
   .html {
     font-size: 50%;
   }
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+  }
+  .navbar a{
+    background-color: rgb(25, 16, 194);
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .navbar a:hover{
+    color: #f2ff04;
+  }
+  
   .contact form .input-box input {
     width: 100%;
   }
   .contact info{
     width: 100%;
   }
+
   }
-  @media (min-width:91px) {
+  /* @media (max-width:320px) {
     html{
       font-size:50% ;
     }
@@ -415,11 +431,14 @@ hr {
       padding: 3rem;
     }
     .navbar a{
-      background-color: rgb(7, 1, 125);
+      background-color: rgb(25, 16, 194);
       margin: 10px 0;
       text-align: center;
       border-radius: 10px;
     }
+    .navbar a:hover{
+      color: #f2ff04;
+    }
     
-  }
+  } */
  
