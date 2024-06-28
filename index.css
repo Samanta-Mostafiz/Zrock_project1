@@ -405,7 +405,10 @@ hr {
     width: 100%;
   }
   }
-  @media (min-width:100px) {
+  @media (max-width:91px) {
+    html{
+      font-size:50% ;
+    }
     .navbar{
       display: flex;
       flex-direction: column;
