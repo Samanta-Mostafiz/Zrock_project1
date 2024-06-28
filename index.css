@@ -194,12 +194,25 @@ a.about-content h3 {
   font-size: 2rem;
   color: #3b94bd;
 }
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
 .contact .info {
-  background: #7a8e97;
-  padding: 4rem 2rem 4rem;
+  background: #eaf0f2;
+  padding: 2rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 40rem;
+  margin: 1rem 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 .5rem #3b94bd;
+
+
 }
 .contact .contact-icon {
   background: #e4e9ef;
@@ -208,7 +221,8 @@ a.about-content h3 {
 }
 .contact .contact-text p {
   color: #060606;
-  font-size: 1.2rem;
+  font-size: 1rem;
+
 }
 
 .contact form {
@@ -229,7 +243,7 @@ a.about-content h3 {
   padding: 1.5rem;
   margin: 0.7rem 0;
   border-radius: 0.8rem;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   background: #e8eef2;
   color: #060606;
 }
@@ -255,39 +269,42 @@ hr {
   background: #2c1232;
 }
 .footer-text {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 .footer-icon {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 0.7rem 1rem;
+  padding: 0.5rem .6rem;
   background-color: #e4e9ef;
   border-radius: 0.8rem;
   transition: 0.5s ease;
 }
 .footer-icon:hover {
-  box-shadow: 0 0 1rem #3b94bd;
+  box-shadow: 0 0 .5rem #3b94bd;
 }
 .footer-icon a {
   font-size: 1.3rem;
-  color: #361d4c;
+  color: #0881fa;
 }
 .follow {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  /* gap: .5rem; */
 }
 .follow p {
   font-size: 1.3rem;
 }
-.follow-icon {
-  font-size: 1.8rem;
-  background-color: #fafcfd;
+.follow-icon a {
+  font-size: 1.5rem;
+  color: #378ce1;
   transition: 0.5s ease;
+  gap: .5rem;
+
 }
 
-/* responsive for various device */
+/* responsive for various device ratio */
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -320,7 +337,7 @@ hr {
     left: 0;
     width: 100%;
     padding: 1rem 3%;
-    background: #5d1c6c;
+    background: #c68cd3;
     border-top: 0.5rem solid #0ba3c5;
     box-shadow: 0 0.5rem 0.5rem #390a44;
     display: none;
@@ -364,6 +381,7 @@ hr {
   }
 }
 @media (max-width: 617px) {
+
   .project-container {
     grid-template-columns: 1fr;
   }
@@ -376,11 +394,29 @@ hr {
     margin-top: 4rem;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 472px ) {
   .html {
     font-size: 50%;
   }
   .contact form .input-box input {
     width: 100%;
   }
-}
+  .contact info{
+    width: 100%;
+  }
+  }
+  @media (min-width:100px) {
+    .navbar{
+      display: flex;
+      flex-direction: column;
+      padding: 3rem;
+    }
+    .navbar a{
+      background-color: rgb(7, 1, 125);
+      margin: 10px 0;
+      text-align: center;
+      border-radius: 10px;
+    }
+    
+  }
+ 

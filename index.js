@@ -6,3 +6,5 @@ const typed= new Typed(".multi",{
     loop:true,
 
 })
+
+  
